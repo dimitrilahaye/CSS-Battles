@@ -1,5 +1,5 @@
 # CSS Battle 127 Letter I
 
-Match 100%
+Match 99.9%
 
-![CSS Battle 127 Letter I](cb127/img.png?raw=true)
+![CSS Battle 127 Letter I](img.png?raw=true)

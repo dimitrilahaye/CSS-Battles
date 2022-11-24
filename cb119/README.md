@@ -2,4 +2,4 @@
 
 Match 98.2%
 
-![CSS Battle 119 Pacman](cb119/img.png?raw=true)
+![CSS Battle 119 Pacman](img.png?raw=true)

@@ -2,4 +2,4 @@
 
 Match 100%
 
-![CSS Battle 109 Curtain](cb09/img.png?raw=true)
+![CSS Battle 109 Curtain](img.png?raw=true)

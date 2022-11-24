@@ -1,50 +1,49 @@
 <style>
     body {
-        background: #222730;
+        background: #191919;
     }
 
     #container {
-        height: 150px;
-        width: 100%;
-    }
-
-    #container,
-    #rect,
-    #square,
-    #round {
         position: absolute;
-        left: 0;
-        right: 0;
+        width: 230px;
+        height: 250px;
         top: 0;
-        bottom: 0;
-        margin: auto;
+        padding: 0 2px;
     }
 
-    #rect {
-        background: #4CAAB3;
-        width: 100%;
-        height: 100%;
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    #square {
-        background: #4CAAB3;
-        border: 50px solid #222730;
-        width: 150px;
-        height: 150px;
-        transform: rotate(135deg);
-        background-clip: content-box;
-    }
-
-    #round {
-        width: 50px;
-        height: 50px;
-        background: #393E46;
+    .circle {
+        background: #F6E59C;
+        width: 40px;
+        height: 40px;
         border-radius: 50%;
+        margin: 20px 10px 1px 10px;
     }
 </style>
 
 <div id="container">
-    <div id="rect"></div>
-    <div id="square"></div>
-    <div id="round"></div>
+    <div id="grid">
+        <div id="row1">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div id="row2">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div id="row3">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+        <div id="row4">
+            <div class="circle"></div>
+        </div>
+    </div>
 </div>
