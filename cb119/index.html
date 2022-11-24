@@ -1,0 +1,111 @@
+<style>
+    body {
+        background: #000000;
+    }
+
+    .center {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #pacman {
+        position: absolute;
+        background: #E0E246;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #mouth {
+        position: absolute;
+        background: #000000;
+        width: 40px;
+        height: 40px;
+        right: -25%;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        transform: rotate(45deg);
+    }
+
+    .pill {
+        position: absolute;
+        left: -60px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #FFFFFF;
+    }
+
+    .pill~.pill {
+        left: 0px;
+    }
+
+    .pill~.pill~.pill {
+        left: 60px;
+    }
+
+    .leg {
+        position: absolute;
+        background: #000000;
+        width: 20px;
+        height: 20px;
+        bottom: -11px;
+        transform: rotate(45deg);
+    }
+
+    .leg~.leg {
+        left: 20px;
+    }
+
+    .leg~.leg~.leg {
+        left: 40px;
+    }
+
+    #ghost {
+        position: absolute;
+        right: 0;
+        width: 60px;
+        height: 30px;
+        background: #C74E4E;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #head {
+        position: absolute;
+        background: #C74E4E;
+        width: 60px;
+        height: 60px;
+        top: -30px;
+        border-radius: 50%;
+    }
+
+    #container {
+        height: 60px;
+        width: 270px;
+    }
+</style>
+
+<div id="container" class="center">
+    <div id="pacman">
+        <div id="mouth"></div>
+    </div>
+    <div class="pill center"></div>
+    <div class="pill center"></div>
+    <div class="pill center"></div>
+    <div id="ghost">
+        <div id="head"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+    </div>
+</div>

@@ -1,0 +1,114 @@
+<style>
+    body {
+        background: #E3516E;
+    }
+
+    #container {
+        height: 160px;
+        width: 160px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    .corner {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: #E3516E;
+        width: 50px;
+        height: 100px;
+    }
+
+    #corner-left {
+        left: -79px;
+        border-radius: 0px 10px 10px 0px;
+    }
+
+    #corner-right {
+        right: -79px;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    .barre {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background: #FADE8B;
+    }
+
+    #top,
+    #bottom {
+        height: 30px;
+        width: 45%;
+    }
+
+    #top {
+        top: 0;
+    }
+
+    #bottom {
+        bottom: 0;
+    }
+
+    #middle {
+        height: 100%;
+        width: 34px;
+    }
+
+    .round {
+        position: absolute;
+        background: #FADE8B;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    #round-left {
+        bottom: 0;
+        left: -10px;
+    }
+
+    #round-right {
+        top: 0;
+        right: -10px;
+    }
+
+    #round-top-left {
+        left: 30px;
+    }
+
+    #round-top-right {
+        right: 30px;
+    }
+
+    #round-bottom-left {
+        bottom: 0;
+        left: 30px;
+    }
+
+    #round-bottom-right {
+        bottom: 0;
+        right: 30px;
+    }
+</style>
+<div id="container">
+    <div id="top" class="barre"></div>
+    <div id="bottom" class="barre"></div>
+    <div id="middle" class="barre"></div>
+    <div id="round-left" class="round"></div>
+    <div id="round-right" class="round"></div>
+    <div id="round-top-left" class="round"></div>
+    <div id="round-top-right" class="round"></div>
+    <div id="round-bottom-left" class="round"></div>
+    <div id="round-bottom-right" class="round"></div>
+    <div id="corner-left" class="corner"></div>
+    <div id="corner-right" class="corner"></div>
+</div>

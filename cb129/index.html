@@ -1,0 +1,82 @@
+<style>
+    body {
+        background: #6592CF;
+    }
+
+    #container {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        width: 70px;
+        height: 135px;
+    }
+
+    .b {
+        position: absolute;
+        width: 70px;
+        height: 140px;
+    }
+
+    .b:nth-of-type(1) {
+        background: #515DBD;
+        transform: translate(50%, -50%);
+    }
+
+    .b:nth-of-type(3) {
+        background: #060F55;
+        transform: translate(-50%, -50%);
+    }
+
+    .b:nth-of-type(2) {
+        background: #2E3B9F;
+        transform: translate(0%, -50%);
+    }
+
+    .round-bottom,
+    .round-top {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        right: -30px;
+        border-radius: 50%;
+    }
+
+    .b:nth-of-type(1) .round-bottom,
+    .b:nth-of-type(1) .round-top {
+        background: #515DBD;
+    }
+
+    .b:nth-of-type(3) .round-bottom,
+    .b:nth-of-type(3) .round-top {
+        background: #060F55;
+    }
+
+    .b:nth-of-type(2) .round-bottom,
+    .b:nth-of-type(2) .round-top {
+        background: #2E3B9F;
+    }
+
+    .round-top {
+        top: 0;
+    }
+
+    .round-bottom {
+        bottom: 0;
+    }
+</style>
+
+<div id="container">
+    <div class="b">
+        <div class="round-top"></div>
+        <div class="round-bottom"></div>
+    </div>
+    <div class="b">
+        <div class="round-top"></div>
+        <div class="round-bottom"></div>
+    </div>
+    <div class="b">
+        <div class="round-top"></div>
+        <div class="round-bottom"></div>
+    </div>
+</div>

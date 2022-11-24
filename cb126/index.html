@@ -1,0 +1,64 @@
+<style>
+    body {
+        background: #62306D;
+    }
+
+    #container {
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #upper-right,
+    #upper-left {
+        position: absolute;
+        width: 50px;
+        height: 100%;
+
+    }
+
+    #upper-left {
+        background: #FEF9CA;
+        transform: skew(-20deg, 0);
+        left: 20px;
+    }
+
+    #upper-right {
+        background: #C5B732;
+        transform: skew(20deg, 0);
+        right: 20px;
+    }
+
+    #lower-right,
+    #lower-left {
+        position: absolute;
+        width: 55px;
+        height: 35%;
+    }
+
+    #lower-left {
+        background: #E38F66;
+        transform: skew(-40deg, 0);
+        left: 25px;
+        bottom: 0;
+    }
+
+    #lower-right {
+        background: #AA445F;
+        transform: skew(40deg, 0);
+        right: 25px;
+        bottom: 0;
+    }
+</style>
+
+<div id="container">
+    <div id="upper-right"></div>
+    <div id="upper-left"></div>
+    <div id="lower-right"></div>
+    <div id="lower-left"></div>
+</div>

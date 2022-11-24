@@ -1,0 +1,52 @@
+<style>
+    body {
+        background: #293D7E;
+    }
+
+    .center-rel {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #stroke {
+        position: absolute;
+        border-radius: 50% 50% 0 0;
+        border: solid 19px #6E91CA;
+        border-bottom: none;
+        width: 170px;
+        height: 180px;
+        top: 0;
+        box-sizing: border-box;
+    }
+
+    #container {
+        height: 210px;
+        width: 170px;
+    }
+
+    .ear {
+        position: absolute;
+        height: 80px;
+        width: 60px;
+        background: #6E91CA;
+        bottom: 10px;
+    }
+
+    #left {
+        left: 0;
+        border-radius: 25% 30% 45% 45%;
+    }
+
+    #right {
+        right: 0;
+        border-radius: 30% 30% 45% 45%;
+    }
+</style>
+
+<div id="container" class="center-rel">
+    <div id="stroke"></div>
+    <div id="left" class="ear"></div>
+    <div id="right" class="ear"></div>
+</div>

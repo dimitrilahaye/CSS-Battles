@@ -1,0 +1,145 @@
+<style>
+    body {
+        background: #000000;
+    }
+
+    #container {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        border: solid 20px #54C144;
+    }
+
+    .wall {
+        position: absolute;
+        background: #C74E4E;
+    }
+
+    .h {
+        height: 40px;
+    }
+
+    .v {
+        height: 180px;
+    }
+
+    .big {
+        width: 200px;
+    }
+
+    .big.v {
+        width: 40px
+    }
+
+    .little {
+        width: 80px;
+    }
+
+    .wall:nth-of-type(1) {
+        top: 40px;
+        left: 40px;
+    }
+
+    .wall:nth-of-type(2) {
+        top: 40px;
+        left: 160px;
+    }
+
+    .wall:nth-of-type(3) {
+        top: 120px;
+        left: 40px;
+    }
+
+    .wall:nth-of-type(4) {
+        top: 40px;
+        right: 40px;
+    }
+
+    .ship {
+        position: absolute;
+        width: 50px;
+        height: 40px;
+        bottom: 40px;
+        left: 40px;
+    }
+
+    .body {
+        position: absolute;
+        background: #54C144;
+        left: 10px;
+        width: 20px;
+        height: 100%;
+    }
+
+    .reactor {
+        position: absolute;
+        background: #54C144;
+        width: 10px;
+        height: 10px;
+    }
+
+    .reactor.top {
+        top: 0px;
+    }
+
+    .reactor.bottom {
+        bottom: 0px;
+    }
+
+    .canon {
+        position: absolute;
+        background: #54C144;
+        width: 30px;
+        height: 10px;
+    }
+
+    .canon.top,
+    .canon.bottom {
+        right: 10px;
+    }
+
+    .canon.center {
+        width: 25px;
+        height: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+
+    .canon.bottom {
+        bottom: 0px;
+    }
+
+    .bullet {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #FFFFFF;
+        bottom: 55px;
+        left: 100px;
+    }
+
+    .bullet~.bullet {
+        left: 120px;
+    }
+</style>
+
+<div id="container">
+    <div class="wall little h"></div>
+    <div class="wall little h"></div>
+    <div class="wall big h"></div>
+    <div class="wall big v"></div>
+    <div class="ship">
+        <div class="reactor top"></div>
+        <div class="reactor bottom"></div>
+        <div class="body"></div>
+        <div class="canon top"></div>
+        <div class="canon center"></div>
+        <div class="canon bottom"></div>
+    </div>
+    <div class="bullet"></div>
+    <div class="bullet"></div>
+</div>

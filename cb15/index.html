@@ -1,0 +1,51 @@
+<style>
+    body {
+        background: #09042A;
+    }
+
+    .center-rel {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .circle {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+
+    .middle {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+        width: 81px;
+        height: 82px;
+        border-radius: 100% 0 100% 0;
+        background: #09042A;
+    }
+
+    .left {
+        background: #7B3F61;
+        left: 0;
+    }
+
+    .right {
+        background: #E78481;
+        right: 0;
+    }
+
+    #container {
+        height: 150px;
+        width: 250px;
+    }
+</style>
+
+<div id="container" class="center-rel">
+    <div class="circle left"></div>
+    <div class="circle right"></div>
+    <div class="middle"></div>
+</div>

@@ -1,0 +1,50 @@
+<style>
+    body {
+        background: #222730;
+    }
+
+    #container {
+        height: 150px;
+        width: 100%;
+    }
+
+    #container,
+    #rect,
+    #square,
+    #round {
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+
+    #rect {
+        background: #4CAAB3;
+        width: 100%;
+        height: 100%;
+    }
+
+    #square {
+        background: #4CAAB3;
+        border: 50px solid #222730;
+        width: 150px;
+        height: 150px;
+        transform: rotate(135deg);
+        background-clip: content-box;
+    }
+
+    #round {
+        width: 50px;
+        height: 50px;
+        background: #393E46;
+        border-radius: 50%;
+    }
+</style>
+
+<div id="container">
+    <div id="rect"></div>
+    <div id="square"></div>
+    <div id="round"></div>
+</div>
